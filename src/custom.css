@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Rubik+Mono+One&display=swap');
+
+/* //typography */
+@font-face {
+	font-family: “RubikMonoOne-Regular”;
+	src: url(‘fonts/RubikMonoOne-Regular.eot’);
+	src: local(‘0’), url(‘fonts/RubikMonoOne-Regular.otf’) format(‘opentype’),
+		url(‘fonts/RubikMonoOne-Regular.woff’) format(‘woff’),
+		url(‘fonts/RubikMonoOne-Regular.ttf’) format(‘truetype’),
+		url(‘fonts/RubikMonoOne-Regular.svg#RubikMonoOne-Regular’) format(‘svg’);
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: ‘Poppins-Bold’;
+	src: url(‘fonts/Poppins-Bold.eot’);
+	src: local(‘0’), url(‘fonts/Poppins-Bold.otf’) format(‘opentype’),
+		url(‘fonts/Poppins-Bold.woff’) format(‘woff’),
+		url(‘fonts/Poppins-Bold.ttf’) format(‘truetype’),
+		url(‘fonts/Poppins-Bold.svg#Poppins-Bold’) format(‘svg’);
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: ‘Poppins-Regular’;
+	src: url(‘fonts/Poppins-Regular.eot’);
+	src: local(‘0’), url(‘fonts/Poppins-Regular.otf’) format(‘opentype’),
+		url(‘fonts/Poppins-Regular.woff’) format(‘woff’),
+		url(‘fonts/Poppins-Regular.ttf’) format(‘truetype’),
+		url(‘fonts/Poppins-Regular.svg#Poppins-Regular’) format(‘svg’);
+	font-weight: normal;
+	font-style: normal;
+}
+
+h1 {
+	font-family: “RubikMonoOne-Regular”;
+	font-size: 75px;
+	color: #1d1349;
+	line-height: 75px;
+	margin: 0;
+}
+h2 {
+	font-family: “RubikMonoOne-Regular”;
+	font-size: 50px;
+	color: #1d1349;
+	line-height: 50px;
+	margin: 0;
+}
+h3 {
+	font-family: “RubikMonoOne-Regular”;
+	font-size: 30px;
+	color: #1d1349;
+	line-height: 30px;
+	margin: 0;
+}
+body,
+a,
+p,
+ul li,
+ol li,
+span {
+	font-family: “Poppins-Regular”;
+	font-size: 18px;
+	color: #000;
+	line-height: 30px;
+	background-color: #43b02a !important;
+}
+
+.bg-green-ground {
+	background-color: #43b02a !important;
+}
+
+.button {
+	font-family: “Poppins-Bold”;
+	font-size: 18px;
+	background: #1d1349;
+	color: #fff;
+	border-radius: 5px;
+	border: none;
+	padding: 15px 30px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.button:hover {
+	background: #0076cf;
+}
