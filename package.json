@@ -12,6 +12,8 @@
   "dependencies": {
     "@headlessui/react": "^2.1.2",
     "@heroicons/react": "^2.1.5",
+    "@relume_io/relume-tailwind": "^0.4.0",
+    "@relume_io/relume-ui": "^0.4.0",
     "flowbite": "^2.5.0",
     "flowbite-react": "^0.10.1",
     "react": "^18.3.1",

@@ -1,16 +1,21 @@
-import Header from './components/Header';
-import Stats from './components/Stats';
-import StatsFigures from './components/StatsFigures';
-import AppDemo from './components/AppDemo';
+import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import CallToAction from './components/CallToAction';
+import Benefits from './components/Benefits';
+import SingleStory from './components/SingleStory';
+import GetInTouch from './components/GetInTouch';
+// import Hero from './components/Hero';
 
 const App = () => {
 	return (
-		<div className='pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden'>
-			<Header />
-			<Stats />
-			<StatsFigures />
-			<AppDemo />
+		<div className='overflow-hidden'>
+			<Navbar />
+			<Benefits />
+			<SingleStory />
+			<GetInTouch />
+			{/* <Hero /> */}
+			<CallToAction />
+
 			<Footer />
 		</div>
 	);
