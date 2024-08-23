@@ -8,8 +8,11 @@ Welcome to the Technovation Uganda website! This project is designed to showcase
 
 **Client:** React, TailwindCSS
 
-
-
+## Features
+**Responsive Design:** The website is fully responsive, ensuring a seamless experience across all devices.
+**Modern UI: ** Utilizes Tailwind CSS for a clean and modern design.
+**Dynamic Content: **Built with React JS to enable dynamic content and interactions.
+**Mobile Menu: **A collapsible mobile menu for easy navigation on smaller screens.
 
 
 ## Authors
