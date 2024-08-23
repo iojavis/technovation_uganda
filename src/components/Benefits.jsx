@@ -20,7 +20,7 @@ const Benefits = () => {
 						Girls are changing the world with technology. Climate change,
 						domestic violence, women&apos;s equality, accessibility —
 						these are just a few problems 2,100 Technovation Girls teams
-						tackled in 2023.
+						tackled in 2024.
 					</p>
 				</div>
 
