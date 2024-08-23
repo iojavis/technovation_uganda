@@ -1,8 +1,22 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Technovation Uganda
 
-Currently, two official plugins are available:
+Welcome to the Technovation Uganda website! This project is designed to showcase the mission and activities of Technovation Uganda, an organization dedicated to empowering young women through technology and entrepreneurship. The website provides information about the organization, its programs, and how to get involved.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## Tech Stack
+
+**Client:** React, TailwindCSS
+
+
+
+
+
+## Authors
+
+- [@iojavis](https://www.github.com/iojavis)
+
+
+## Demo
+
+https://technovation-uganda.vercel.app/
