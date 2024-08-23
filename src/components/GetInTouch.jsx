@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Swal from 'sweetalert2';
 
 const GetInTouch = () => {
 	const [result, setResult] = useState('');
@@ -8,7 +9,7 @@ const GetInTouch = () => {
 		setResult('Sending...');
 		const formData = new FormData(event.target);
 
-		formData.append('access_key', '71e1843a-cc4c-42a9-a52d-6703750ad216s');
+		formData.append('access_key', '71e1843a-cc4c-42a9-a52d-6703750ad216');
 
 		const response = await fetch('https://api.web3forms.com/submit', {
 			method: 'POST',
@@ -19,10 +20,22 @@ const GetInTouch = () => {
 
 		if (data.success) {
 			setResult('Form Submitted Successfully');
+			Swal.fire({
+				title: 'Success!',
+				text: 'Your message has been sent!',
+				icon: 'success',
+				confirmButtonText: 'Thank you!',
+			});
 			event.target.reset();
 		} else {
 			console.log('Error', data);
 			setResult(data.message);
+			Swal.fire({
+				title: 'Error!',
+				text: 'Failed to send message',
+				icon: 'error',
+				confirmButtonText: 'Try again',
+			});
 		}
 	};
 
