@@ -1,9 +1,9 @@
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import CallToAction from './components/CallToAction';
 import Benefits from './components/Benefits';
 import SingleStory from './components/SingleStory';
 import GetInTouch from './components/GetInTouch';
+import Newsletter from './components/Newsletter';
 // import Hero from './components/Hero';
 
 const App = () => {
@@ -14,7 +14,7 @@ const App = () => {
 			<SingleStory />
 			<GetInTouch />
 			{/* <Hero /> */}
-			<CallToAction />
+			<Newsletter />
 
 			<Footer />
 		</div>

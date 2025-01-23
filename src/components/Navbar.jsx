@@ -184,7 +184,7 @@ export default function Navbar() {
 										<div className='relative'>
 											<img
 												alt=''
-												src='https://www.oystersandpearls.org/wp-content/uploads/2013/07/inquiry-about-observations2.jpg'
+												src='https://images.unsplash.com/photo-1520333789090-1afc82db536a?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
 												className='aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg'
 											/>
 											<div className='pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10' />

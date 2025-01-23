@@ -1,6 +1,7 @@
 import { technovation_logo } from '../assets';
 
 const Footer = () => {
+	const currentYear = new Date().getFullYear();
 	return (
 		<div>
 			<footer className='w-full py-14'>
@@ -124,8 +125,8 @@ const Footer = () => {
 							</a>
 						</div>
 						<span className='text-lg text-gray-500 text-center block'>
-							©<a href='#'>Technovation Uganda</a> 2024, All rights
-							reserved.
+							©<a href='#'>Technovation Uganda </a>
+							{currentYear}. All rights reserved.
 						</span>
 					</div>
 				</div>

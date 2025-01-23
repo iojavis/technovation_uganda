@@ -1,6 +1,7 @@
-import React from 'react';
+const Newsletter = () => {
+	// const [email, setEmail] = useState('');
+	// const [emailErrorMsg, setEmailErrorMsg] = useState('');
 
-const CallToAction = () => {
 	return (
 		<section className='relative py-10 overflow-hidden bg-black sm:py-16 lg:py-24 xl:py-32'>
 			<div className='absolute inset-0'>
@@ -60,7 +61,7 @@ const CallToAction = () => {
 								type='submit'
 								className='inline-flex items-center justify-center flex-shrink-0 w-auto px-4 py-4 mt-4 font-semibold text-white transition-all duration-200 bg-blue-600 border border-transparent rounded-md sm:mt-0 sm:rounded-l-none sm:w-auto hover:bg-blue-700 focus:bg-blue-700'
 							>
-								Get notofied
+								Get notified
 							</button>
 						</div>
 					</form>
@@ -70,4 +71,4 @@ const CallToAction = () => {
 	);
 };
 
-export default CallToAction;
+export default Newsletter;
