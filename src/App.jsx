@@ -5,6 +5,7 @@ import SingleStory from './components/SingleStory';
 import GetInTouch from './components/GetInTouch';
 import Newsletter from './components/Newsletter';
 // import Hero from './components/Hero';
+import Faq from './components/Faq';
 
 const App = () => {
 	return (
@@ -12,9 +13,10 @@ const App = () => {
 			<Navbar />
 			<Benefits />
 			<SingleStory />
+			<Newsletter />
 			<GetInTouch />
 			{/* <Hero /> */}
-			<Newsletter />
+			<Faq />
 
 			<Footer />
 		</div>

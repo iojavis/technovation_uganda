@@ -1,9 +1,27 @@
+import toast, { Toaster } from 'react-hot-toast';
+
 const Newsletter = () => {
-	// const [email, setEmail] = useState('');
-	// const [emailErrorMsg, setEmailErrorMsg] = useState('');
+	const mailchimpUrl =
+		'https://gmail.us22.list-manage.com/subscribe/post?u=07f0041ea808a4ef4ffa795ab&amp;id=bde569a80a&amp;f_id=00f8c2e1f0';
+
+	const handleSubmit = async (event) => {
+		event.preventDefault();
+		const formData = new FormData(event.target);
+		const response = await fetch(mailchimpUrl, {
+			method: 'POST',
+			body: formData,
+			mode: 'no-cors',
+		});
+		if (response) {
+			toast.success("Thank you, you've been added to our list");
+		} else {
+			toast.error('Something went wrong, please try again');
+		}
+	};
 
 	return (
 		<section className='relative py-10 overflow-hidden bg-black sm:py-16 lg:py-24 xl:py-32'>
+			<Toaster />
 			<div className='absolute inset-0'>
 				<img
 					className='object-cover w-full h-full md:object-left md:scale-150 md:origin-top-left'
@@ -25,7 +43,7 @@ const Newsletter = () => {
 						Get notified when the entries are open
 					</p>
 
-					<form action='#' method='POST' className='mt-8 lg:mt-12'>
+					<form onSubmit={handleSubmit} className='mt-8 lg:mt-12'>
 						<div className='flex flex-col items-center sm:flex-row sm:justify-center'>
 							<div className='flex-1 w-full min-w-0 px-4 sm:px-0'>
 								<div className='relative text-gray-400 focus-within:text-gray-600'>
@@ -48,7 +66,7 @@ const Newsletter = () => {
 									</div>
 									<input
 										type='email'
-										name='email'
+										name='EMAIL'
 										id='email'
 										placeholder='Enter email address'
 										className='block w-full py-4 pl-10 pr-4 text-base text-black placeholder-gray-500 transition-all duration-200 border-gray-200 rounded-md sm:rounded-r-none caret-blue-600 focus:border-blue-600 focus:ring-1 focus:ring-blue-600'
