@@ -6,6 +6,7 @@ import GetInTouch from './components/GetInTouch';
 import Newsletter from './components/Newsletter';
 // import Hero from './components/Hero';
 import Faq from './components/Faq';
+import Partnerships from './components/Partnerships';
 
 const App = () => {
 	return (
@@ -13,6 +14,7 @@ const App = () => {
 			<Navbar />
 			<Benefits />
 			<SingleStory />
+			<Partnerships />
 			<Newsletter />
 			<GetInTouch />
 			{/* <Hero /> */}

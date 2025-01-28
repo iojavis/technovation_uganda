@@ -1,3 +1,6 @@
+import denis_obote_P1 from './img/denis_obote_P1.jpg';
+
+import technovation_logo_1 from './img/technovation_logo_1.jpg';
 import technovation_logo from './technovation_logo.svg';
 import technovation_meta from './technovation_meta.svg';
 
@@ -15,6 +18,8 @@ import quality_education from './img/quality_education.png';
 import sustainable_cities_business from './img/sustainable_cities_business.png';
 
 export {
+	technovation_logo_1,
+	denis_obote_P1,
 	technovation_logo,
 	technovation_meta,
 	discord,

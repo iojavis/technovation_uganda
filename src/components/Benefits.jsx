@@ -3,7 +3,6 @@ import {
 	climate_action,
 	gender_equality,
 	good_healthcare,
-	instagram,
 	quality_education,
 	sustainable_cities_business,
 } from '../assets';

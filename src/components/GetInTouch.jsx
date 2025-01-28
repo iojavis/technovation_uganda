@@ -9,7 +9,7 @@ const GetInTouch = () => {
 		setResult('Sending...');
 		const formData = new FormData(event.target);
 
-		formData.append('access_key', '71e1843a-cc4c-42a9-a52d-6703750ad216');
+		formData.append('access_key', '15c86b15-4b5f-491e-8845-c7365e7f1e19'); // Replace with your actual Web3Forms access key
 
 		const response = await fetch('https://api.web3forms.com/submit', {
 			method: 'POST',
@@ -67,8 +67,7 @@ const GetInTouch = () => {
 
 						<div className='hidden md:mt-auto md:block'>
 							<div className='flex items-center'>
-								{/* Star SVG icons */}
-								{[...Array(4)].map((_, index) => (
+								{[...Array(5)].map((_, index) => (
 									<svg
 										key={index}
 										className='w-6 h-6 text-yellow-400'
@@ -84,8 +83,8 @@ const GetInTouch = () => {
 							<blockquote className='mt-6'>
 								<p className='text-lg leading-relaxed text-white'>
 									The Technovation Uganda Chapter is a community of
-									passionate tea leaders willing to work with girls all
-									over the country in furthering their tech career.
+									passionate tech leaders willing to work with girls
+									all over the country in furthering their tech career.
 								</p>
 							</blockquote>
 
@@ -99,7 +98,7 @@ const GetInTouch = () => {
 									<p className='text-base font-semibold text-white'>
 										Denis Obote
 									</p>
-									<p className='mt-px text-sm text-gray-400'>
+									<p className='mt-px text-sm text-white'>
 										Technovation Chapter Ambassador.
 									</p>
 								</div>
