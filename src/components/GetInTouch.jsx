@@ -182,7 +182,7 @@ const GetInTouch = () => {
 										<div>
 											<button
 												type='submit'
-												className='block w-full px-6 py-4 text-base font-semibold text-white transition-all duration-200 bg-orange-500 border border-transparent rounded-md hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2'
+												className='rounded-lg bg-[#1D1349] px-8 py-4 font-poppins text-lg font-bold text-white shadow-sm transition-all hover:bg-[#180e3a] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1D1349]'
 											>
 												Send.
 											</button>

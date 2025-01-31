@@ -1,5 +1,9 @@
 import denis_obote_P1 from './img/denis_obote_P1.jpg';
 
+import technovation_logo_bw from './logos/technovation_logo_bw.svg';
+import technovation_logo_white from './logos/technovation_logo_white.png';
+import technovation_logo_rgb from './logos/technovation_logo_rgb.svg';
+import technovation_logo_colored from './logos/technovation_logo_colored.svg';
 import technovation_logo_1 from './img/technovation_logo_1.jpg';
 import technovation_logo from './technovation_logo.svg';
 import technovation_meta from './technovation_meta.svg';
@@ -18,6 +22,10 @@ import quality_education from './img/quality_education.png';
 import sustainable_cities_business from './img/sustainable_cities_business.png';
 
 export {
+	technovation_logo_white,
+	technovation_logo_rgb,
+	technovation_logo_bw,
+	technovation_logo_colored,
 	technovation_logo_1,
 	denis_obote_P1,
 	technovation_logo,

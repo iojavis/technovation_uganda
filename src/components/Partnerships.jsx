@@ -1,23 +1,26 @@
-import { technovation_logo_1 } from '../assets';
+import { technovation_logo_colored } from '../assets';
+import { technovation_logo_bw } from '../assets';
+
 
 const partnershipsData = [
 	{
 		name: 'Technovation Uganda',
 		description:
 			'Empowering girls and young women to become tech entrepreneurs and leaders.',
-		imageSrc: { technovation_logo_1 }, // Replace with Technovation Uganda logo
-		lightImageSrc: 'https://via.placeholder.com/150', // Replace with Technovation Uganda light logo
+		imageSrc:  technovation_logo_colored , 
+		lightImageSrc: 'https://via.placeholder.com/150', 
+		// light logo
 		altText: 'Technovation Uganda',
-		link: 'https://technovation.org', // Replace with actual link
+		link: 'https://technovation.org', 
 	},
 	{
 		name: 'Oysters & Pearls Uganda',
 		description:
 			'Transforming lives through education, mentorship, and community development.',
-		imageSrc: 'https://via.placeholder.com/150', // Replace with Oysters and Pearls Uganda logo
-		lightImageSrc: 'https://via.placeholder.com/150', // Replace with Oysters and Pearls Uganda light logo
+		imageSrc: technovation_logo_bw, 
+		lightImageSrc: 'https://via.placeholder.com/150', 
 		altText: 'Oysters & Pearls Uganda',
-		link: 'https://oystersandpearlsuganda.org', // Replace with actual link
+		link: 'https://oystersandpearlsuganda.org', 
 	},
 ];
 

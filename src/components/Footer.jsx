@@ -1,4 +1,4 @@
-import { technovation_logo } from '../assets';
+import { technovation_logo_colored } from '../assets';
 
 const Footer = () => {
 	const currentYear = new Date().getFullYear();
@@ -9,15 +9,15 @@ const Footer = () => {
 					<div className='max-w-3xl mx-auto'>
 						<a href='#' className='flex justify-center '>
 							<img
-								src={technovation_logo}
+								src={technovation_logo_colored}
 								alt='Technovation logo'
-								className='w-40 h-8'
+								className='w-100 h-24'
 							/>
 						</a>
 						<ul className='text-lg flex items-center justify-center flex-col gap-7 md:flex-row md:gap-12 transition-all duration-500 py-16 mb-10 border-b border-gray-200'>
 							<li>
 								<a
-									href='#'
+									href='https://technovationchallenge.org/tag/faq'
 									className='text-gray-800 hover:text-gray-900'
 								>
 									FAQ
@@ -25,23 +25,23 @@ const Footer = () => {
 							</li>
 							<li>
 								<a
-									href='#'
+									href='https://technovationchallenge.org/mentor-resources'
 									className=' text-gray-800 hover:text-gray-900'
 								>
-									Mentorship
+									Mentor Resources
 								</a>
 							</li>
 							<li>
 								<a
-									href='#'
+									href='https://www.technovation.org/news-events'
 									className=' text-gray-800 hover:text-gray-900'
 								>
-									Resources
+									News & Events
 								</a>
 							</li>
 							<li>
 								<a
-									href='#'
+									href='https://www.technovation.org/blog'
 									className=' text-gray-800 hover:text-gray-900'
 								>
 									Blogs
@@ -49,16 +49,16 @@ const Footer = () => {
 							</li>
 							<li>
 								<a
-									href='#'
+									href='https://technovationchallenge.org/contact'
 									className=' text-gray-800 hover:text-gray-900'
 								>
-									Support
+									Contact
 								</a>
 							</li>
 						</ul>
 						<div className='flex space-x-10 justify-center items-center mb-14'>
 							<a
-								href='#'
+								href='https://x.com/technovationug'
 								className='block  text-gray-900 transition-all duration-500 hover:text-indigo-600 '
 							>
 								<svg
@@ -74,7 +74,7 @@ const Footer = () => {
 								</svg>
 							</a>
 							<a
-								href='#'
+								href='https://www.instagram.com/technovationglobal'
 								className='block  text-gray-900 transition-all duration-500 hover:text-indigo-600 '
 							>
 								<svg
@@ -90,7 +90,7 @@ const Footer = () => {
 								</svg>
 							</a>
 							<a
-								href='#'
+								href='https://www.instagram.com/technovationglobal'
 								className='block  text-gray-900 transition-all duration-500 hover:text-indigo-600 '
 							>
 								<svg
@@ -106,7 +106,7 @@ const Footer = () => {
 								</svg>
 							</a>
 							<a
-								href='#'
+								href='https://www.youtube.com/playlist?list=PLaisj5ariFBdqA5rZHhH61z-bw9aoETli'
 								className='block  text-gray-900 transition-all duration-500 hover:text-indigo-600 '
 							>
 								<svg

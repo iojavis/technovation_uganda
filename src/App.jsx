@@ -7,11 +7,13 @@ import Newsletter from './components/Newsletter';
 // import Hero from './components/Hero';
 import Faq from './components/Faq';
 import Partnerships from './components/Partnerships';
+import Header from './components/Header';
 
 const App = () => {
 	return (
 		<div className='overflow-hidden'>
 			<Navbar />
+			<Header />
 			<Benefits />
 			<SingleStory />
 			<Partnerships />

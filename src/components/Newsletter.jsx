@@ -77,7 +77,7 @@ const Newsletter = () => {
 
 							<button
 								type='submit'
-								className='inline-flex items-center justify-center flex-shrink-0 w-auto px-4 py-4 mt-4 font-semibold text-white transition-all duration-200 bg-blue-600 border border-transparent rounded-md sm:mt-0 sm:rounded-l-none sm:w-auto hover:bg-blue-700 focus:bg-blue-700'
+								className='rounded-lg bg-[#1D1349] px-8 py-4 font-poppins text-lg font-bold text-white shadow-sm transition-all hover:bg-[#180e3a] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1D1349]'
 							>
 								Get notified
 							</button>
