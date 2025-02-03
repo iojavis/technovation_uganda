@@ -1,106 +1,103 @@
 import { useState } from 'react';
 
+const ChevronIcon = ({ isOpen }) => (
+	<svg
+		className={`h-6 w-6 transform transition-transform ${
+			isOpen ? 'rotate-180' : ''
+		}`}
+		fill='none'
+		stroke='currentColor'
+		viewBox='0 0 24 24'
+	>
+		<path
+			strokeLinecap='round'
+			strokeLinejoin='round'
+			strokeWidth={2}
+			d='M19 9l-7 7-7-7'
+		/>
+	</svg>
+);
+
+const faqs = [
+	{
+		question: 'What is Technovation Global?',
+		answer:
+			'Technovation is a program that empowers girls to become leaders, creators, and problem-solvers through technology and entrepreneurship.',
+	},
+	{
+		question: 'Who can participate in Technovation?',
+		answer:
+			'Girls aged 8-18 from anywhere in the world can participate in Technovation. No prior coding experience is required.',
+	},
+	{
+		question: 'How can I register for the program?',
+		answer:
+			'You can register for the program through the Technovation Official website. Keep an eye on our announcements for the registration dates.',
+	},
+	{
+		question: 'What kind of support is provided during the program?',
+		answer:
+			'Participants receive mentorship from industry professionals, access to learning resources, and support from the Technovation Team.',
+	},
+];
+
 const Faq = () => {
-	// State to keep track of which FAQ is open
-	const [openFAQ, setOpenFAQ] = useState(null);
-
-	// Function to toggle FAQ open/close
-	const toggleFAQ = (index) => {
-		setOpenFAQ(openFAQ === index ? null : index);
-	};
-
-	// List of FAQs
-	const faqs = [
-		{
-			question: 'What is Technovation Global?',
-			answer:
-				'Technovation is a program that empowers girls to become leaders, creators, and problem-solvers through technology and entrepreneurship.',
-		},
-		{
-			question: 'Who can participate in Technovation?',
-			answer:
-				'Girls aged 8-18 from anywhere in the world can participate in Technovation. No prior coding experience is required.',
-		},
-		{
-			question: 'How can I register for the program?',
-			answer:
-				'You can register for the program through the Technovation Official  website. Keep an eye on our announcements for the registration dates.',
-		},
-		{
-			question: 'What kind of support is provided during the program?',
-			answer:
-				'Participants receive mentorship from industry professionals, access to learning resources, and support from the Technovation Team',
-		},
-	];
+	const [openIndex, setOpenIndex] = useState(null);
 
 	return (
-		<section>
-			<div className='mx-auto flex w-full max-w-7xl flex-col items-center justify-center px-5 py-16 md:px-10 md:py-20'>
-				<div className='mx-auto flex max-w-xl flex-col items-center justify-center px-6 text-center lg:max-w-3xl lg:px-10'>
-					<h1 className='text-3xl lg:text-4xl font-bold text-black'>
+		<section
+			aria-labelledby='faq-heading'
+			className='bg-gray-50 py-16 dark:bg-gray-900'
+		>
+			<div className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
+				<header className='text-center'>
+					<h2
+						id='faq-heading'
+						className='text-3xl font-bold text-gray-900 sm:text-4xl dark:text-white'
+					>
 						Frequently Asked Questions
-					</h1>
-					<p className='font-inter mt-4 max-w-xl px-5 text-base font-light text-gray-500 lg:max-w-lg'>
-						Find answers to common questions about Technovation Global.
+					</h2>
+					<p className='mt-4 text-lg text-gray-600 dark:text-gray-300'>
+						Common questions about Technovation programs
 					</p>
-				</div>
-				<div className='mt-10 flex w-full max-w-4xl flex-col'>
+				</header>
+
+				<div className='mt-12 space-y-6'>
 					{faqs.map((faq, index) => (
 						<div
-							key={index}
-							className='relative my-3 w-full rounded-md border border-gray-300 px-12 py-8'
+							key={faq.question}
+							className='rounded-lg bg-white shadow-sm dark:bg-gray-800'
 						>
-							<div className='max-w-3xl'>
-								<h2 className='text-xl font-bold text-black'>
-									{faq.question}
-								</h2>
-								{openFAQ === index && (
-									<p className='font-inter mt-4 text-base font-light text-gray-500'>
-										{faq.answer}
-									</p>
-								)}
-							</div>
 							<button
-								className='absolute right-5 top-9 focus:outline-none'
-								onClick={() => toggleFAQ(index)}
+								onClick={() =>
+									setOpenIndex(openIndex === index ? null : index)
+								}
+								className='flex w-full items-center justify-between p-6'
+								aria-expanded={openIndex === index}
+								aria-controls={`faq-answer-${index}`}
 							>
-								<svg
-									width='24'
-									height='24'
-									viewBox='0 0 24 24'
-									fill='none'
-									xmlns='http://www.w3.org/2000/svg'
-								>
-									<circle cx='12' cy='12' r='12' fill='white'></circle>
-									<path
-										d='M7.04688 11.9999H16.9469'
-										stroke='black'
-										strokeWidth='2'
-										strokeLinecap='round'
-										strokeLinejoin='round'
-									></path>
-									<path
-										d='M12 7.05005V16.95'
-										stroke='black'
-										strokeWidth='2'
-										strokeLinecap='round'
-										strokeLinejoin='round'
-										className={`${
-											openFAQ === index ? 'opacity-0' : 'opacity-100'
-										} transition-opacity duration-100 ease-in-out`}
-									></path>
-								</svg>
+								<h3 className='text-lg font-semibold text-gray-900 dark:text-white'>
+									{faq.question}
+								</h3>
+								<ChevronIcon isOpen={openIndex === index} />
 							</button>
+
+							<div
+								id={`faq-answer-${index}`}
+								role='region'
+								className={`grid transition-all duration-300 ease-in-out ${
+									openIndex === index
+										? 'grid-rows-[1fr] opacity-100 scale-y-100'
+										: 'grid-rows-[0fr] opacity-0 scale-y-95'
+								}`}
+							>
+								<p className='overflow-hidden px-6 pb-6 text-gray-600 dark:text-gray-300'>
+									{faq.answer}
+								</p>
+							</div>
 						</div>
 					))}
 				</div>
-				{/* <p className='font-inter mx-auto mt-12 text-base text-gray-500 text-center'>
-					Can’t find the answer you’re looking for? Reach out to our
-					<a href='#' className='text-black font-bold'>
-						{' '}
-						customer support team.
-					</a>
-				</p> */}
 			</div>
 		</section>
 	);
