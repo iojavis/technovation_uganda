@@ -1,4 +1,5 @@
 import toast, { Toaster } from 'react-hot-toast';
+import { t5 } from '../assets';
 
 const Newsletter = () => {
 	const mailchimpUrl =
@@ -25,7 +26,7 @@ const Newsletter = () => {
 			<div className='absolute inset-0'>
 				<img
 					className='object-cover w-full h-full md:object-left md:scale-150 md:origin-top-left'
-					src='https://cdn.rareblocks.xyz/collection/celebration/images/cta/5/girl-working-on-laptop.jpg'
+					src={t5}
 					alt=''
 				/>
 			</div>

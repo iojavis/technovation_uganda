@@ -1,4 +1,12 @@
 import denis_obote_P1 from './img/denis_obote_P1.jpg';
+import op_logo from './img/op_logo.png';
+
+import t8 from './img/season_photos/t8.jpg';
+import t2 from './img/season_photos/t2.jpg';
+import t9 from './img/season_photos/t9.jpg';
+import t7 from './img/season_photos/t7.jpg';
+import t5 from './img/season_photos/t5.jpg';
+import t12 from './img/season_photos/t12.jpg';
 
 import technovation_logo_bw from './logos/technovation_logo_bw.svg';
 import technovation_logo_white from './logos/technovation_logo_white.png';
@@ -22,6 +30,8 @@ import quality_education from './img/quality_education.png';
 import sustainable_cities_business from './img/sustainable_cities_business.png';
 
 export {
+	op_logo,
+	t8, t2, t9, t7,t5,t12,
 	technovation_logo_white,
 	technovation_logo_rgb,
 	technovation_logo_bw,

@@ -31,12 +31,12 @@ export default function Navbar() {
 		<div className='bg-[#43B02A] shadow-sm'>
 			<header className='fixed w-full top-0 z-50 bg-[#43B02A]'>
 				<nav
-					className='mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8'
+					className='mx-auto flex max-w-7xl items-center justify-between p-2 lg:px-4'
 					aria-label='Global'
 				>
 					{/* Logo */}
 					<div className='flex lg:flex-1'>
-						<a href='#' className='-m-1.5 p-1.5'>
+						<a href='#' className='-m-1 p-1'>
 							<span className='sr-only'>Technovation Uganda</span>
 							<img
 								alt='Technovation Logo'

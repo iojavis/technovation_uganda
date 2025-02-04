@@ -1,3 +1,5 @@
+import { t12 } from "../assets";
+
 const SingleStory = () => {
 	return (
 		<div>
@@ -9,7 +11,7 @@ const SingleStory = () => {
 							<div className='pl-8 pr-4'>
 								<img
 									className='relative rounded-lg shadow-md'
-									src='https://images.unsplash.com/photo-1519457431-44ccd64a579b?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+									src={t12}
 									alt='Sacred Heart SS Technovation teams celebrating their success'
 								/>
 							</div>
@@ -28,7 +30,8 @@ const SingleStory = () => {
 													<br />
 													<br />
 													<span className='font-poppins-bold'>
-														- Super Glady, Team Lead, Genius Guild.
+														- Super Glady, Team Lead, Genius
+														Guild.
 													</span>
 												</p>
 											</blockquote>
@@ -54,7 +57,14 @@ const SingleStory = () => {
 										AI-powered agricultural solution using image
 										recognition to diagnose plant diseases and boost
 										crop yields.
-									</p>
+									</p>{' '}
+									<br />
+									<a
+										className='text-gray-500 decoration-gray-500 hover:opacity-80 focus:outline-none focus:opacity-80'
+										href='https://youtu.be/_vf6f_gzrxo?si=SYo44xKSxEVHQqRI'
+									>
+										Watch Video.
+									</a>
 								</div>
 
 								{/* Speak Bridge Card */}
@@ -66,15 +76,22 @@ const SingleStory = () => {
 										Multilingual translation platform bridging
 										communication gaps across Uganda&apos;s diverse
 										linguistic communities.
-									</p>
+									</p>{' '}
+									<br />
+									<a
+										className='text-gray-500 decoration-gray-500 hover:opacity-80 focus:outline-none focus:opacity-80'
+										href='https://youtu.be/WwlMh_xcJRg'
+									>
+										Watch Video.
+									</a>
 								</div>
 
 								{/* Achievement Text */}
 								<p className='font-poppins text-gray-800'>
-									In 2024, Sacred Heart SS became Uganda&apos;s only school
-									with dual semifinalist teams, continuing their legacy
-									of technological excellence through Technovation&apos;s
-									global platform.
+									In 2024, Sacred Heart SS became Uganda&apos;s only
+									school with dual semifinalist teams, continuing their
+									legacy of technological excellence through
+									Technovation&apos;s global platform.
 								</p>
 							</div>
 

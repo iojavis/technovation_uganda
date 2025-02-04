@@ -1,3 +1,5 @@
+import { t2, t8, t9, t7 } from "../assets";
+
 const Header = () => {
 	return (
 		<div className='relative isolate'>
@@ -46,7 +48,10 @@ const Header = () => {
 				<div className='mx-auto max-w-7xl px-6 pb-32 pt-36 sm:pt-60 lg:px-8 lg:pt-32'>
 					<div className='mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center'>
 						<div className='relative w-full max-w-xl lg:shrink-0 xl:max-w-2xl'>
-							<h1 className='font-rubik-mono text-[56px] font-bold leading-[65px] tracking-tight text-[#1D1349] sm:text-[75px] sm:leading-[75px]'>
+							{/* <h1 className='font-rubik-mono text-[56px] font-bold leading-[65px] tracking-tight text-[#1D1349] sm:text-[75px] sm:leading-[75px]'>
+								Welcome to Technovation Uganda.
+							</h1> */}
+							<h1 className='font-rubik-mono text-4xl font-bold leading-tight text-[#1D1349] sm:text-5xl sm:leading-tight md:text-6xl md:leading-tight lg:text-[56px] lg:leading-[65px]'>
 								Welcome to Technovation Uganda.
 							</h1>
 							<p className='mt-6 font-poppins text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none'>
@@ -70,7 +75,7 @@ const Header = () => {
 								<div className='relative'>
 									<img
 										alt=''
-										src='https://images.unsplash.com/photo-1520333789090-1afc82db536a?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+										src={t8}
 										className='aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg'
 									/>
 									<div className='pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10' />
@@ -80,7 +85,7 @@ const Header = () => {
 								<div className='relative'>
 									<img
 										alt=''
-										src='https://www.oystersandpearls.org/wp-content/uploads/2018/05/technovation-competition2.jpg'
+										src={t2}
 										className='aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg'
 									/>
 									<div className='pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10' />
@@ -88,7 +93,7 @@ const Header = () => {
 								<div className='relative'>
 									<img
 										alt=''
-										src='https://i.ytimg.com/vi/GZObKm2WYQA/maxresdefault.jpg'
+										src={t9}
 										className='aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg'
 									/>
 									<div className='pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10' />
@@ -98,7 +103,7 @@ const Header = () => {
 								<div className='relative'>
 									<img
 										alt=''
-										src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl64Wd7HeL0cgVUSLUK12MxJv1lD7mB-_4Ng&s'
+										src={t7}
 										className='aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg'
 									/>
 									<div className='pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10' />
